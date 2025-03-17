@@ -28,7 +28,7 @@ int main()
 {
 
     // video read
-    const string& filename = "C:/Users/gemge/OneDrive/바탕 화면/23-동계모각소/remote.small.mp4";
+    const string& filename = "video_path";
     VideoCapture capture(filename);
     if (!capture.isOpened()) {
         cerr << "\n\nUnable to open file!\n\n";
@@ -61,7 +61,7 @@ int main()
 
     // init mask for drawing
     Mat mask = Mat::zeros(old_frame.size(), old_frame.type());
-    Mat overlay = imread("C:/Users/gemge/OneDrive/바탕 화면/23-동계모각소/hmm.webp");
+    Mat overlay = imread("image_path");
     Mat frame, frame_gray;
 
 
