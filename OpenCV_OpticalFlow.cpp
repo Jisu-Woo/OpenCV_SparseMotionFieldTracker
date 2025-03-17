@@ -28,7 +28,7 @@ int main()
 {
 
     // video read
-    const string& filename = "video_path";
+    const string& filename = "VIDEO_PATH";
     VideoCapture capture(filename);
     if (!capture.isOpened()) {
         cerr << "\n\nUnable to open file!\n\n";
@@ -61,7 +61,7 @@ int main()
 
     // init mask for drawing
     Mat mask = Mat::zeros(old_frame.size(), old_frame.type());
-    Mat overlay = imread("image_path");
+    Mat overlay = imread("IMAGE_PATH");
     Mat frame, frame_gray;
 
 
